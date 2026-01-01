@@ -8,5 +8,17 @@
   "banner": {
     "title": "Made-to-order furniture that fits your style",
     "button": "Our projects"
+  },
+
+  "stats": {
+    "title": "Key Performance Indicators",
+    "experienceTitle": "Experience and Reliability",
+    "experienceText": "17 years of furniture manufacturing - trusted by clients from over 15 countries",
+    "qualityTitle": "High Quality",
+    "qualityText": "We use eco-friendly materials and modern manufacturing technologies",
+    "designTitle": "Custom Design",
+    "designText": "We create furniture that highlights your style and fits perfectly into your interior",
+    "rangeTitle": "Wide Range",
+    "rangeText": "Kitchens, wardrobes, walk-in closets, children's furniture, bathroom furniture, office furniture - everything for your comfort"
   }
 }

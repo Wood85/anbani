@@ -1,8 +1,9 @@
 import Image from 'next/image';
-import styles from './Banner.module.scss';
 import Link from 'next/link';
 
 import { useTranslations } from 'next-intl';
+
+import styles from './Banner.module.scss';
 
 export default function Banner() {
   const t = useTranslations('banner');
