@@ -4,5 +4,9 @@
     "about": "About",
     "services": "Services",
     "contacts": "Contacts"
+  },
+  "banner": {
+    "title": "Made-to-order furniture that fits your style",
+    "button": "Our projects"
   }
 }
