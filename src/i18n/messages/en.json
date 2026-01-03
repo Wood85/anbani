@@ -29,5 +29,12 @@
     "btn": "Submit",
     "mockName": "Sergey",
     "mockText": "Your review will be the first one!"
+  },
+
+  "aboutUs": {
+    "title": "About Us",
+    "text1": "Anbani was founded in 2008 with the goal of providing high-quality made-to-order furniture that combines functionality, style, and durability. Over the years, we have established ourselves as a reliable partner for clients from over 15 countries, offering customized solutions for each project.",
+    "text2": "Our core values include attention to detail, the use of eco-friendly materials, and a commitment to innovation in furniture design and manufacturing. We take pride in offering a wide range of products, including kitchens, wardrobes, walk-in closets, children's furniture, bathroom furniture, and office furniture.",
+    "text3": "The Anbani team of professionals works closely with clients at every stage of the process - from concept to installation - to ensure complete satisfaction of their needs and expectations. We strive to create furniture that not only enhances spaces but also improves the quality of life for our clients."
   }
 }

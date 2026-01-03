@@ -26,13 +26,13 @@ export default function Navigation() {
       </button>
 
       <nav className={clsx(styles.nav, open && styles.open)}>
-        <Link href="about.html" className={styles.link} onClick={() => setOpen(false)}>
+        <Link href="/about" className={styles.link} onClick={() => setOpen(false)}>
           {t('about')}
         </Link>
-        <Link href="services.html" className={styles.link} onClick={() => setOpen(false)}>
+        <Link href="/services" className={styles.link} onClick={() => setOpen(false)}>
           {t('services')}
         </Link>
-        <Link href="contacts.html" className={styles.link} onClick={() => setOpen(false)}>
+        <Link href="/contacts" className={styles.link} onClick={() => setOpen(false)}>
           {t('contacts')}
         </Link>
         <div className={styles.contacts}>

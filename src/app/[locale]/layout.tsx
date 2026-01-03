@@ -4,6 +4,10 @@ import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
 import { notFound } from 'next/navigation';
+
+import { Header } from '@/widgets/header';
+import { Footer } from '@/widgets/footer';
+
 import '@/app/globals.scss';
 
 const montserrat = Montserrat({
@@ -36,7 +40,9 @@ export default async function RootLayout({ children, params }: Props) {
     <html lang={locale}>
       <body className={`${montserrat.variable}`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          {children}
+          <Header />
+          <main>{children}</main>
+          <Footer />
         </NextIntlClientProvider>
       </body>
     </html>
