@@ -1,0 +1,35 @@
+.reviews {
+  padding: 10px 30px;
+  background: #fafafa;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.reviewsContainer {
+  width: 100%;
+}
+
+.reviewsTitle {
+  margin-bottom: 30px;
+}
+
+.reviewsList {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+
+.reviewsList::-webkit-scrollbar {
+  display: none; /* Chrome, Safari */
+}
+
+@media (max-width: 550px) {
+  .reviews {
+    padding: 10px 0 10px 16px;
+  }
+
+  .reviewsTitle {
+    text-align: center;
+  }
+}

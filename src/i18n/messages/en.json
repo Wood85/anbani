@@ -20,5 +20,12 @@
     "designText": "We create furniture that highlights your style and fits perfectly into your interior",
     "rangeTitle": "Wide Range",
     "rangeText": "Kitchens, wardrobes, walk-in closets, children's furniture, bathroom furniture, office furniture - everything for your comfort"
+  },
+  "reviews": {
+    "title": "Customer Reviews",
+    "formTitle": "Leave a Review",
+    "name": "Your Name",
+    "text": "Your Review",
+    "btn": "Submit"
   }
 }

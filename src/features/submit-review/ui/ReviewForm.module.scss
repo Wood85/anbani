@@ -1,0 +1,153 @@
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 40px 30px;
+  display: flex;
+  justify-content: space-between;
+  gap: 60px;
+}
+
+.map {
+  display: flex;
+  flex-grow: 1;
+  flex-direction: column;
+  gap: 20px;
+  min-width: 300px;
+  height: 400px;
+  width: 100%;
+  border-radius: 10px;
+}
+
+.form {
+  background: white;
+  padding: 24px;
+  border: 2px solid #5abf70;
+  border-radius: 16px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+  min-width: 400px;
+}
+
+.label {
+  font-size: 16px;
+}
+
+.input,
+.textarea {
+  width: 100%;
+  padding: 12px 16px;
+  border-radius: 10px;
+  border: 1px solid #ddd;
+  font-size: 16px;
+  font-family: inherit;
+  transition: border-color 0.2s;
+}
+
+.input:focus,
+.textarea:focus {
+  border-color: #5abf70;
+  outline: none;
+}
+
+.textarea {
+  min-height: 110px;
+  resize: vertical;
+}
+
+.button {
+  background: #5abf70;
+  color: white;
+  border: none;
+  padding: 13px 18px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 150px;
+  border-radius: 10px;
+  font-size: 17px;
+  font-weight: 600;
+  cursor: pointer;
+  align-self: flex-start;
+  transition: background 0.3s;
+}
+
+.button:hover {
+  background: #016b18;
+  transition: background 0.3s;
+}
+
+@media (max-width: 900px) {
+  .container {
+    justify-content: center;
+    flex-direction: column;
+    gap: 30px;
+    align-items: center;
+  }
+
+  .form {
+    padding: 18px;
+    gap: 12px;
+  }
+
+  .title {
+    text-align: center;
+  }
+
+  .input,
+  .textarea {
+    font-size: 14px;
+  }
+
+  .label {
+    font-size: 14px;
+  }
+
+  .button {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 550px) {
+  .title {
+    text-align: center;
+  }
+
+  .container {
+    justify-content: center;
+    padding: 20px 16px;
+  }
+
+  .address {
+    gap: 10px;
+  }
+
+  .address__list {
+    gap: 5px;
+  }
+
+  .address__item {
+    font-size: 13px;
+  }
+
+  .form {
+    min-width: 100%;
+    padding: 12px;
+    gap: 10px;
+  }
+
+  .input,
+  .textarea {
+    font-size: 12px;
+  }
+
+  .label {
+    font-size: 12px;
+  }
+
+  .button {
+    font-size: 12px;
+    align-self: center;
+  }
+}
