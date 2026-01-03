@@ -5,7 +5,7 @@ import styles from './Logo.module.scss';
 
 export default function Logo() {
   return (
-    <Link className={styles.heading} href="index.html">
+    <Link className={styles.heading} href="/">
       <Image
         src="/logo.png"
         width={55}
