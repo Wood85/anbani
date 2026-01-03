@@ -1,0 +1,23 @@
+.slider {
+  width: 100%;
+  padding: 0 0 50px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.container {
+  width: 100%;
+  max-width: 1440px;
+  padding: 0 30px;
+}
+
+.title {
+  text-align: left;
+  margin-bottom: 40px;
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding: 0 16px;
+  }
+}
