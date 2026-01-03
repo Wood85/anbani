@@ -26,6 +26,8 @@
     "formTitle": "Leave a Review",
     "name": "Your Name",
     "text": "Your Review",
-    "btn": "Submit"
+    "btn": "Submit",
+    "mockName": "Sergey",
+    "mockText": "Your review will be the first one!"
   }
 }

@@ -26,9 +26,16 @@ export const Reviews = () => {
         <div className={styles.reviewsContainer}>
           <h2 className={styles.reviewsTitle}>{t('title')}</h2>
           <div className={styles.reviewsList}>
-            {loading
-              ? Array.from({ length: 3 }).map((_, i) => <ReviewCardSkeleton key={i} />)
-              : reviews.map((r) => <ReviewCard key={r.id} {...r} />)}
+            {loading && Array.from({ length: 3 }).map((_, i) => <ReviewCardSkeleton key={i} />)}
+            {!loading && reviews.length === 0 && (
+              <ReviewCard
+                key={1000}
+                name={t('mockName')}
+                text={t('mockText')}
+                created_at="2026-01-03 10:58:00.749407+00"
+              />
+            )}
+            {!loading && reviews.length > 0 && reviews.map((r) => <ReviewCard key={r.id} {...r} />)}
           </div>
         </div>
       </section>
