@@ -22,7 +22,7 @@ export default function Banner() {
       <div className={styles.content}>
         <div className={styles.container}>
           <h1 className={styles.title}>{t('title')}</h1>
-          <Link href="projects.html" className={styles.button}>
+          <Link href="/projects" className={styles.button}>
             {t('button')}
           </Link>
         </div>

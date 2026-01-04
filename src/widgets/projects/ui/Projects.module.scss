@@ -1,0 +1,13 @@
+.projects {
+  padding: 40px 0;
+}
+
+.dropdown {
+  margin-bottom: 20px;
+}
+
+@media (max-width: 550px) {
+  .projects {
+    padding: 20px 16px;
+  }
+}

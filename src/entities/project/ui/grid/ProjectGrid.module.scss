@@ -1,0 +1,25 @@
+.grid {
+  column-count: 3;
+  column-gap: 16px;
+}
+
+@media (max-width: 1024px) {
+  .grid {
+    column-count: 2;
+  }
+}
+
+@media (max-width: 640px) {
+  .grid {
+    column-count: 1;
+  }
+}
+
+.item {
+  break-inside: avoid;
+  margin-bottom: 16px;
+}
+
+.loader {
+  height: 120px;
+}
