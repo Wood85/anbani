@@ -38,7 +38,7 @@ export default async function RootLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
-      <body className={`${montserrat.variable}`}>
+      <body className={`${montserrat.variable} font-sans`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <main>{children}</main>

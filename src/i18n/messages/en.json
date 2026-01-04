@@ -79,5 +79,18 @@
       "line1": "With a design project - we follow the drawings precisely",
       "line2": "Without a project - we help plan the furniture from scratch"
     }
+  },
+
+  "projects": {
+    "all": "All",
+    "projects": "Projects",
+    "kitchens": "Kitchens",
+    "wardrobes": "Wardrobes",
+    "livingRooms": "Living rooms",
+    "bedrooms": "Bedrooms",
+    "childrenRooms": "Children's rooms",
+    "bathrooms": "Bathrooms",
+    "workspaces": "Workspaces",
+    "b2b": "B2B"
   }
 }
