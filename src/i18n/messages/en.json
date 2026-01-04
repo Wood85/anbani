@@ -44,5 +44,40 @@
     "city": "Batumi",
     "street": "32 Yuri Gagarin St.",
     "address": "Address"
+  },
+
+  "services": {
+    "title": "Our Services",
+    "description": "We offer a full range of custom furniture services, including design, manufacturing, and installation. Our professional team is ready to help you create the perfect solution for your home or office. We take care of the entire process - from measurements to finished furniture in your space.",
+    "subtitle1": "Measurements and consultation",
+    "text1": {
+      "subtitle": "We visit the site and:",
+      "line1": "take precise measurements of the space",
+      "line2": "consider walls, corners, niches, and utilities",
+      "line3": "discuss your wishes and requirements",
+      "line4": "help you choose materials and fittings"
+    },
+    "subtitle2": "Furniture manufacturing",
+    "text2": {
+      "subtitle": "We manufacture custom-built furniture to your measurements:",
+      "line1": "kitchens",
+      "line2": "wardrobes and sliding-door wardrobes",
+      "line3": "walk-in closets",
+      "line4": "cabinets, chests of drawers, shelving units, and other furniture for home and office"
+    },
+    "subtitle3": "Delivery and installation",
+    "text3": {
+      "subtitle": "We deliver the furniture and handle the installation:",
+      "line1": "carefully assemble everything on site",
+      "line2": "level and align all elements",
+      "line3": "securely fix the structures",
+      "line4": "adjust doors and drawers"
+    },
+    "subtitle4": "With or without a design project",
+    "text4": {
+      "subtitle": "You get a result that perfectly fits your space. We work:",
+      "line1": "With a design project - we follow the drawings precisely",
+      "line2": "Without a project - we help plan the furniture from scratch"
+    }
   }
 }
