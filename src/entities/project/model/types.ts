@@ -7,7 +7,8 @@ export type ProjectCategory =
   | 'children-rooms'
   | 'bathrooms'
   | 'workspaces'
-  | 'b2b';
+  | 'b2b'
+  | 'hallways';
 
 export interface Project {
   id: number;

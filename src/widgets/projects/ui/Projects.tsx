@@ -22,6 +22,7 @@ export default function Projects() {
       bathrooms: t('bathrooms'),
       workspaces: t('workspaces'),
       b2b: t('b2b'),
+      hallways: t('hallways'),
     }),
     [t],
   );
