@@ -1,0 +1,42 @@
+.header {
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px 30px;
+  flex-wrap: nowrap;
+  width: 100%;
+  max-width: 1440px;
+}
+
+.logo {
+  order: 1;
+}
+.nav {
+  order: 2;
+}
+.lang {
+  order: 3;
+}
+
+@media (max-width: 990px) {
+  .logo {
+    order: 2;
+  }
+  .nav {
+    order: 1;
+  }
+}
+
+@media (max-width: 550px) {
+  .container {
+    padding: 8px 16px;
+  }
+}

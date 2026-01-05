@@ -1,0 +1,97 @@
+{
+  "navigation": {
+    "phone": "Phone",
+    "about": "About",
+    "services": "Services",
+    "contacts": "Contacts"
+  },
+  "banner": {
+    "title": "Made-to-order furniture that fits your style",
+    "button": "Our projects"
+  },
+
+  "stats": {
+    "title": "Key Performance Indicators",
+    "experienceTitle": "Experience and Reliability",
+    "experienceText": "17 years of furniture manufacturing - trusted by clients from over 15 countries",
+    "qualityTitle": "High Quality",
+    "qualityText": "We use eco-friendly materials and modern manufacturing technologies",
+    "designTitle": "Custom Design",
+    "designText": "We create furniture that highlights your style and fits perfectly into your interior",
+    "rangeTitle": "Wide Range",
+    "rangeText": "Kitchens, wardrobes, walk-in closets, children's furniture, bathroom furniture, office furniture - everything for your comfort"
+  },
+  "reviews": {
+    "title": "Customer Reviews",
+    "formTitle": "Leave a Review",
+    "name": "Your Name",
+    "text": "Your Review",
+    "btn": "Submit",
+    "mockName": "Sergey",
+    "mockText": "Your review will be the first one!"
+  },
+
+  "aboutUs": {
+    "title": "About Us",
+    "text1": "Anbani was founded in 2008 with the goal of providing high-quality made-to-order furniture that combines functionality, style, and durability. Over the years, we have established ourselves as a reliable partner for clients from over 15 countries, offering customized solutions for each project.",
+    "text2": "Our core values include attention to detail, the use of eco-friendly materials, and a commitment to innovation in furniture design and manufacturing. We take pride in offering a wide range of products, including kitchens, wardrobes, walk-in closets, children's furniture, bathroom furniture, and office furniture.",
+    "text3": "The Anbani team of professionals works closely with clients at every stage of the process - from concept to installation - to ensure complete satisfaction of their needs and expectations. We strive to create furniture that not only enhances spaces but also improves the quality of life for our clients."
+  },
+
+  "contacts": {
+    "title": "Contacts",
+    "phone": "Phone",
+    "city": "Batumi",
+    "street": "32 Yuri Gagarin St.",
+    "address": "Address"
+  },
+
+  "services": {
+    "title": "Our Services",
+    "description": "We offer a full range of custom furniture services, including design, manufacturing, and installation. Our professional team is ready to help you create the perfect solution for your home or office. We take care of the entire process - from measurements to finished furniture in your space.",
+    "subtitle1": "Measurements and consultation",
+    "text1": {
+      "subtitle": "We visit the site and:",
+      "line1": "take precise measurements of the space",
+      "line2": "consider walls, corners, niches, and utilities",
+      "line3": "discuss your wishes and requirements",
+      "line4": "help you choose materials and fittings"
+    },
+    "subtitle2": "Furniture manufacturing",
+    "text2": {
+      "subtitle": "We manufacture custom-built furniture to your measurements:",
+      "line1": "kitchens",
+      "line2": "wardrobes and sliding-door wardrobes",
+      "line3": "walk-in closets",
+      "line4": "cabinets, chests of drawers, shelving units, and other furniture for home and office"
+    },
+    "subtitle3": "Delivery and installation",
+    "text3": {
+      "subtitle": "We deliver the furniture and handle the installation:",
+      "line1": "carefully assemble everything on site",
+      "line2": "level and align all elements",
+      "line3": "securely fix the structures",
+      "line4": "adjust doors and drawers"
+    },
+    "subtitle4": "With or without a design project",
+    "text4": {
+      "subtitle": "You get a result that perfectly fits your space. We work:",
+      "line1": "With a design project - we follow the drawings precisely",
+      "line2": "Without a project - we help plan the furniture from scratch"
+    }
+  },
+
+  "projects": {
+    "all": "All",
+    "projects": "Projects",
+    "kitchens": "Kitchens",
+    "wardrobes": "Wardrobes",
+    "livingRooms": "Living rooms",
+    "bedrooms": "Bedrooms",
+    "childrenRooms": "Children's rooms",
+    "bathrooms": "Bathrooms",
+    "workspaces": "Workspaces",
+    "b2b": "B2B",
+    "hallways": "Hallways"
+  }
+}

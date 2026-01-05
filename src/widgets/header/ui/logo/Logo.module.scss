@@ -1,0 +1,29 @@
+.heading {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 22px;
+}
+
+@media (max-width: 550px) {
+  .logo {
+    height: 30px;
+    width: auto;
+  }
+
+  .title {
+    display: none;
+  }
+}
