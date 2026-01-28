@@ -1,0 +1,19 @@
+.description {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 932px;
+  margin-bottom: 20px;
+}
+
+@media (max-width: 1024px) {
+  .description {
+    max-width: 616px;
+  }
+}
+
+@media (max-width: 640px) {
+  .description {
+    max-width: 300px;
+  }
+}
