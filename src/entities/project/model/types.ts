@@ -23,6 +23,7 @@ export interface ApartmentProject {
   src: string[];
   title: string;
   description: string;
+  option: string;
 }
 
 export const ALL_CATEGORY = 'all' as const;

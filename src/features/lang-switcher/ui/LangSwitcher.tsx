@@ -4,6 +4,7 @@ import { useEffect, useRef, useState } from 'react';
 import Image from 'next/image';
 import { useLocale } from 'next-intl';
 import { useRouter, usePathname } from '@/i18n/navigation';
+import { useSearchParams } from 'next/navigation';
 import styles from './LangSwitcher.module.scss';
 
 type Lang = 'ru' | 'en';
@@ -16,6 +17,7 @@ export default function LangSwitcher() {
 
   const router = useRouter();
   const pathname = usePathname();
+  const searchParams = useSearchParams();
 
   useEffect(() => {
     function handleClickOutside(e: MouseEvent) {
@@ -30,7 +32,13 @@ export default function LangSwitcher() {
 
   function handleSelect(nextLang: Lang) {
     if (nextLang !== locale) {
-      router.replace(pathname, { locale: nextLang });
+      router.replace(
+        {
+          pathname,
+          query: Object.fromEntries(searchParams.entries()),
+        },
+        { locale: nextLang },
+      );
     }
     setIsOpen(false);
   }
