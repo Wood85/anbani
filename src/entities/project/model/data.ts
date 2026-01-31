@@ -4,16 +4,15 @@ export const apartmentProjects: ApartmentProject[] = [
   {
     id: 1,
     src: [
-      '/images/projects/br_1/1.jpg',
       '/images/projects/br_1/2.jpg',
       '/images/projects/br_1/3.jpg',
       '/images/projects/br_1/4.jpg',
       '/images/projects/br_1/5.jpg',
       '/images/projects/br_1/6.jpg',
     ],
-    title: 'Bi Residence. Studio',
-    description:
-      'A bright and comfortable space fully furnished with our custom-made pieces. Kitchen: MDF AGT, metal, accent lighting, and built-in Bosch appliances. Wall panels, the TV cabinet, the built-in wardrobe, and the bathroom vanity unit are all made of MDF AGT',
+    title: 'apartmentProjects.items.bi_residence.title',
+    description: 'apartmentProjects.items.bi_residence.description',
+    option: 'apartmentProjects.items.bi_residence.option',
   },
   {
     id: 2,
@@ -30,9 +29,9 @@ export const apartmentProjects: ApartmentProject[] = [
       '/images/projects/br_2/10.jpg',
       '/images/projects/br_2/11.jpg',
     ],
-    title: 'Bagrationi Residence 1+1',
-    description:
-      'A compact yet highly functional 1+1 apartment with a walk-in closet and a bathroom, thoughtfully designed down to the smallest detail. The layout includes a cozy kitchen–living area, a bedroom with a separate walk-in closet, and a modern bathroom. A distinctive design feature is the kitchen divided into two functional blocks with fully integrated appliances, maximizing convenience and ergonomic use of space. High-quality materials were used throughout: MDF AGT, quartzite, glass, and metal — a combination that creates a stylish and contemporary interior',
+    title: 'apartmentProjects.items.bagrationi.title',
+    description: 'apartmentProjects.items.bagrationi.description',
+    option: 'apartmentProjects.items.bagrationi.option',
   },
   {
     id: 3,
@@ -65,8 +64,9 @@ export const apartmentProjects: ApartmentProject[] = [
       '/images/projects/pt/26.jpeg',
       '/images/projects/pt/27.jpeg',
     ],
-    title: 'Porta Tower',
-    description: '',
+    title: 'apartmentProjects.items.porta_tower.title',
+    description: 'apartmentProjects.items.porta_tower.description',
+    option: 'apartmentProjects.items.porta_tower.option',
   },
 ];
 

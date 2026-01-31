@@ -93,5 +93,25 @@
     "workspaces": "Workspaces",
     "b2b": "B2B",
     "hallways": "Hallways"
+  },
+
+  "apartmentProjects": {
+    "items": {
+      "bi_residence": {
+        "option": "Bi Residence. Studio",
+        "title": "Bi Residence. Studio",
+        "description": "\nA bright and comfortable space fully furnished with our custom-made pieces.\n\nKitchen: MDF AGT, metal, accent lighting, and built-in Bosch appliances. Wall panels, the TV cabinet, the built-in wardrobe, and the bathroom vanity unit are all made of MDF AGT"
+      },
+      "bagrationi": {
+        "option": "Bagrationi Residence 1+1",
+        "title": "Bagrationi Residence 1+1",
+        "description": "A compact yet highly functional 1+1 apartment with a walk-in closet and a bathroom, thoughtfully designed down to the smallest detail.\nThe layout includes a cozy kitchen–living area, a bedroom with a separate walk-in closet, and a modern bathroom.\n\nA distinctive design feature is the kitchen divided into two functional blocks with fully integrated appliances, maximizing convenience and ergonomic use of space.\n\nHigh-quality materials were used throughout: MDF AGT, quartzite, glass, and metal — a combination that creates a stylish and contemporary interior"
+      },
+      "porta_tower": {
+        "option": "Porta Tower",
+        "title": "Porta Tower — Apartment Ready for Living",
+        "description": "\nStylish 2+1 apartment (85 m²) with MDT & AGT furniture — fully turnkey\n\n✔ Premium kitchen with built-in furniture and appliances, accent lighting, and a quartz agglomerate island\n✔ Two spacious bathrooms — fully equipped\n✔ Functional storage solutions: illuminated cabinets, wardrobes, and hallway furniture\n✔ Thoughtfully designed down to the smallest detail."
+      }
+    }
   }
 }
