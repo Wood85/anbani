@@ -13,13 +13,13 @@
   "stats": {
     "title": "Key Performance Indicators",
     "experienceTitle": "Experience and Reliability",
-    "experienceText": "17 years of furniture manufacturing - trusted by clients from over 15 countries",
+    "experienceText": "More than 17 years of professional experience in furniture manufacturing — trusted by clients from over 15 countries.Operating in the Georgian market since 2022.",
     "qualityTitle": "High Quality",
     "qualityText": "We use eco-friendly materials and modern manufacturing technologies",
     "designTitle": "Custom Design",
     "designText": "We create furniture that highlights your style and fits perfectly into your interior",
     "rangeTitle": "Wide Range",
-    "rangeText": "Kitchens, wardrobes, walk-in closets, children's furniture, bathroom furniture, office furniture - everything for your comfort"
+    "rangeText": "Kitchens, wardrobes, walk-in closets, kids’ furniture, bathroom furniture, office furniture — everything for your comfort."
   },
   "reviews": {
     "title": "Customer Reviews",
@@ -33,9 +33,9 @@
 
   "aboutUs": {
     "title": "About Us",
-    "text1": "Anbani was founded in 2008 with the goal of providing high-quality made-to-order furniture that combines functionality, style, and durability. Over the years, we have established ourselves as a reliable partner for clients from over 15 countries, offering customized solutions for each project.",
-    "text2": "Our core values include attention to detail, the use of eco-friendly materials, and a commitment to innovation in furniture design and manufacturing. We take pride in offering a wide range of products, including kitchens, wardrobes, walk-in closets, children's furniture, bathroom furniture, and office furniture.",
-    "text3": "The Anbani team of professionals works closely with clients at every stage of the process - from concept to installation - to ensure complete satisfaction of their needs and expectations. We strive to create furniture that not only enhances spaces but also improves the quality of life for our clients."
+    "text1": "Anbani is a custom furniture company delivering high-quality solutions that combine functionality, style, and durability. With more than 17 years of professional experience, we have built a strong reputation as a reliable partner for clients in over 15 countries. Since 2022, Anbani has been operating in Georgia.",
+    "text2": "Our core values include attention to detail, the use of eco-friendly materials, and a continuous drive for innovation in furniture design and production. We offer a wide range of products, including kitchens, wardrobes and storage systems, children’s furniture, bathroom furniture, and office solutions.",
+    "text3": "The Anbani team works closely with clients at every stage — from concept and design to manufacturing and installation — ensuring consistent quality and results that fully meet expectations. We create furniture that not only enhances interiors but also improves everyday living."
   },
 
   "contacts": {
@@ -82,11 +82,10 @@
   },
 
   "projects": {
-    "all": "All",
     "projects": "Projects",
     "kitchens": "Kitchens",
     "wardrobes": "Wardrobes",
-    "livingRooms": "Living rooms",
+    "dressingRooms": "Dressing rooms",
     "bedrooms": "Bedrooms",
     "childrenRooms": "Children's rooms",
     "bathrooms": "Bathrooms",
