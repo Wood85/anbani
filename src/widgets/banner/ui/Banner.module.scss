@@ -56,6 +56,7 @@
 }
 
 .button {
+  min-width: 220px;
   position: relative;
   display: inline-block;
   max-width: fit-content;
@@ -68,6 +69,7 @@
   font-weight: 600;
   cursor: pointer;
   transition: color 0.5s ease;
+  font-size: 14px;
 }
 .button::before {
   content: '';
@@ -84,17 +86,17 @@
     opacity 0.5s ease;
 }
 
-.button::after {
-  content: '';
-  position: absolute;
-  left: 0;
-  bottom: 10px;
-  height: 2px;
-  width: 0;
-  margin: 0 24px;
-  background-color: #fff;
-  transition: width 0.5s ease;
-}
+// .button::after {
+//   content: '';
+//   position: absolute;
+//   left: 0;
+//   bottom: 10px;
+//   height: 2px;
+//   width: 0;
+//   margin: 0 24px;
+//   background-color: #fff;
+//   transition: width 0.5s ease;
+// }
 
 .button:hover {
   color: #fff;
@@ -105,8 +107,54 @@
   opacity: 1;
 }
 
-.button:hover::after {
-  width: calc(100% - 48px);
+// .button:hover::after {
+//   width: calc(100% - 48px);
+// }
+
+.dropdownWrap {
+  position: relative;
+  display: inline-block;
+  width: 220px;
+}
+
+.dropdownContainer {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  z-index: 10;
+  padding-top: 8px;
+}
+
+.dropdown {
+  background: #fff;
+  border-radius: 12px;
+  // padding: 8px 0;
+  min-width: 220px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
+  overflow: hidden;
+
+  .category {
+    list-style: none;
+
+    .categoryLink {
+      font-size: 12px;
+      display: block;
+      padding: 6px 16px;
+      color: #000;
+      text-decoration: none;
+      transition:
+        background 0.3s ease,
+        color 0.3s ease;
+
+      &:hover {
+        background: #9bbf00;
+        color: #fff;
+        transition:
+          background 0.3s ease,
+          color 0.3s ease;
+      }
+    }
+  }
 }
 
 @media (max-width: 1200px) {

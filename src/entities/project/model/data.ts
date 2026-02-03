@@ -113,26 +113,21 @@ export const projects: Project[] = [
   },
   {
     id: 8,
-    src: '/images/projects/13.jpeg',
-    category: 'hallways',
-  },
-  {
-    id: 9,
     src: '/images/projects/chakvi-tropical.jpeg',
     category: 'kitchens',
   },
   {
-    id: 10,
+    id: 9,
     src: '/images/projects/chakvi-tropical-1.jpeg',
     category: 'kitchens',
   },
   {
-    id: 11,
+    id: 10,
     src: '/images/projects/kobuleti.jpeg',
     category: 'kitchens',
   },
   {
-    id: 12,
+    id: 11,
     src: '/images/projects/kobuleti-1.jpeg',
     category: 'kitchens',
   },
