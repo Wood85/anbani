@@ -1,14 +1,14 @@
 export type ProjectCategory =
   | 'projects'
   | 'kitchens'
-  | 'wardrobes'
+  | 'hallways'
   | 'bedrooms'
-  | 'living-rooms'
   | 'children-rooms'
+  | 'wardrobes'
+  | 'dressing-rooms'
   | 'bathrooms'
   | 'workspaces'
-  | 'b2b'
-  | 'hallways';
+  | 'b2b';
 
 export interface Project {
   id: number;
@@ -26,12 +26,9 @@ export interface ApartmentProject {
   option: string;
 }
 
-export const ALL_CATEGORY = 'all' as const;
-
-export type CategoryFilter = ProjectCategory | typeof ALL_CATEGORY;
+export type CategoryFilter = ProjectCategory;
 
 export interface CategoryOption {
   value: string;
   label: string;
-  // count: number;
 }
