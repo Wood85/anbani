@@ -1,100 +1,72 @@
+/* eslint-disable @typescript-eslint/no-non-null-assertion */
 'use client';
 
 import { useMemo } from 'react';
 import { useRouter, useSearchParams } from 'next/navigation';
 import { useTranslations } from 'next-intl';
+
+import type { ProjectCategory, ProjectItem } from '@/entities/project';
 import {
-  projects,
-  apartmentProjects,
-  ProjectGrid,
-  ProjectImagesGrid,
+  projectCategories,
   CategoryDropdown,
+  ProjectImagesGrid,
   ProjectDescription,
 } from '@/entities/project';
-import type { ProjectCategory, CategoryFilter } from '@/entities/project';
+import { assertNonEmpty } from '@/shared/lib';
 
 import styles from './Projects.module.scss';
 
 export default function Projects() {
   const t = useTranslations('projects');
-  const at = useTranslations('apartmentProjects.items');
 
-  const categoryLabels: Record<ProjectCategory, string> = useMemo(
-    () => ({
-      projects: t('projects'),
-      kitchens: t('kitchens'),
-      hallways: t('hallways'),
-      bedrooms: t('bedrooms'),
-      'children-rooms': t('childrenRooms'),
-      wardrobes: t('wardrobes'),
-      'dressing-rooms': t('dressingRooms'),
-      bathrooms: t('bathrooms'),
-      workspaces: t('workspaces'),
-      b2b: t('b2b'),
-    }),
-    [t],
-  );
+  const itemT = useTranslations();
 
   const router = useRouter();
   const searchParams = useSearchParams();
 
-  const categoryFromUrl = searchParams.get('category');
-  const projectFromUrl = searchParams.get('project');
-  const projectIdFromUrl = projectFromUrl ? Number(projectFromUrl) : null;
+  assertNonEmpty(projectCategories, 'projectCategories is empty');
 
-  const category: CategoryFilter = Object.keys(categoryLabels).includes(categoryFromUrl ?? '')
-    ? (categoryFromUrl as CategoryFilter)
-    : 'projects';
+  const categoryFromUrl = searchParams.get('category') as ProjectCategory | null;
+  const itemFromUrl = searchParams.get('item');
 
-  const categoryProjects = useMemo(() => {
-    return category === 'projects' ? apartmentProjects : [];
-  }, [category]);
+  const activeCategory = useMemo(() => {
+    const found = projectCategories.find((c) => c.category === categoryFromUrl);
+    return found ?? projectCategories[0];
+  }, [categoryFromUrl])!;
 
-  const selectedProject = useMemo(() => {
-    if (!categoryProjects.length) return null;
+  assertNonEmpty(activeCategory.items, `Category "${activeCategory.category}" has no items`);
+  const activeItem: ProjectItem = useMemo(() => {
+    const found = activeCategory.items.find((item) => String(item.id) === itemFromUrl);
+    return found ?? activeCategory.items[0];
+  }, [activeCategory, itemFromUrl]) as ProjectItem;
 
-    return categoryProjects.find((p) => p.id === projectIdFromUrl) ?? categoryProjects[0];
-  }, [categoryProjects, projectIdFromUrl]);
-
-  const filteredCategory = useMemo(() => {
-    return projects.filter((p) => p.category === category);
-  }, [category]);
-
-  const categoryOptions = useMemo(() => {
-    const counts = projects.reduce<Record<ProjectCategory, number>>(
-      (acc, p) => {
-        acc[p.category] = (acc[p.category] || 0) + 1;
-        return acc;
-      },
-      {} as Record<ProjectCategory, number>,
-    );
-
-    return [
-      ...Object.entries(counts).map(([key]) => ({
-        value: key,
-        label: categoryLabels[key as ProjectCategory],
+  const categoryOptions = useMemo(
+    () =>
+      projectCategories.map((c) => ({
+        value: c.category,
+        label: t(c.category),
       })),
-    ];
-  }, [t, categoryLabels]);
+    [t],
+  );
 
-  const projectOptions = useMemo(() => {
-    return apartmentProjects.map((p) => ({
-      value: String(p.id),
-      label: at(p.option.replace('apartmentProjects.items.', '')),
-    }));
-  }, [apartmentProjects, at]);
+  const itemOptions = useMemo(
+    () =>
+      activeCategory.items.map((item) => ({
+        value: String(item.id),
+        label: itemT(item.option),
+      })),
+    [activeCategory, itemT],
+  );
 
   const handleChangeCategory = (value: string) => {
-    const params = new URLSearchParams(searchParams.toString());
-
+    const params = new URLSearchParams();
     params.set('category', value);
-
     router.replace(`?${params.toString()}`, { scroll: false });
   };
 
-  const handleChangeProject = (value: string) => {
+  const handleChangeItem = (value: string) => {
     const params = new URLSearchParams(searchParams.toString());
-    params.set('project', value);
+    params.set('item', value);
     router.replace(`?${params.toString()}`, { scroll: false });
   };
 
@@ -102,30 +74,26 @@ export default function Projects() {
     <section className={styles.projects}>
       <div className={styles.dropdown}>
         <CategoryDropdown
-          value={category}
+          value={activeCategory.category}
           options={categoryOptions}
           onChange={handleChangeCategory}
         />
       </div>
 
-      {categoryFromUrl === 'projects' && projectOptions.length > 0 && (
-        <div className={styles.dropdown}>
-          <CategoryDropdown
-            value={String(selectedProject?.id)}
-            options={projectOptions}
-            onChange={handleChangeProject}
-          />
-        </div>
-      )}
+      <div className={styles.dropdown}>
+        <CategoryDropdown
+          value={String(activeItem.id)}
+          options={itemOptions}
+          onChange={handleChangeItem}
+        />
+      </div>
 
-      {categoryFromUrl === 'projects' && selectedProject ? (
-        <>
-          <ProjectDescription project={selectedProject} />
-          <ProjectImagesGrid images={selectedProject.src} />
-        </>
-      ) : (
-        <ProjectGrid projects={filteredCategory} />
-      )}
+      <ProjectDescription
+        title={itemT(activeItem.title)}
+        description={itemT(activeItem.description)}
+      />
+
+      <ProjectImagesGrid images={activeItem.src} />
     </section>
   );
 }

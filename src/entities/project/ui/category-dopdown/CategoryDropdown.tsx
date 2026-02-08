@@ -64,7 +64,6 @@ export const CategoryDropdown = ({ value, options, onChange }: Props) => {
                 }}
               >
                 <span>{opt.label}</span>
-                {/* <span className={styles.count}>{opt.count}</span> */}
               </li>
             ))}
           </motion.ul>

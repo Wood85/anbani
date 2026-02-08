@@ -5,10 +5,22 @@ export type ProjectCategory =
   | 'bedrooms'
   | 'children-rooms'
   | 'wardrobes'
-  | 'dressing-rooms'
   | 'bathrooms'
-  | 'workspaces'
-  | 'b2b';
+  | 'b2b'
+  | 'others';
+
+export interface ProjectItem {
+  id: number;
+  src: string[];
+  title: string;
+  description: string;
+  option: string;
+}
+
+export interface ProjectCategoryData {
+  category: ProjectCategory;
+  items: ProjectItem[];
+}
 
 export interface Project {
   id: number;

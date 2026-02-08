@@ -53,12 +53,12 @@
   font-size: 12px;
 
   &:hover {
-    background: #5abf70;
+    background: var(--main-color);
   }
 }
 
 .active {
-  background: #016b18;
+  background: var(--main-color);
   color: #fff;
 }
 
