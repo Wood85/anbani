@@ -1,10 +1,4 @@
 .swiperContainer {
-  //   width: 100%;
-  //   max-width: 1440px;
-  //   padding: 0 30px;
-  //   display: flex;
-  //   gap: 20px;
-
   width: 100%;
   border-radius: 10px;
 
@@ -13,7 +7,7 @@
     width: 35px;
     height: 35px;
     border-radius: 50%;
-    background: #016b18;
+    background: var(--main-color);
     padding: 5px;
     color: white;
     transition:
@@ -21,7 +15,7 @@
       transform 0.3s;
 
     &:hover {
-      background: #016b18b0;
+      background: var(--main-transparent-color);
       transform: scale(1.05);
     }
   }
@@ -60,7 +54,7 @@
   :global(.swiper-pagination-bullet-active) {
     width: 24px;
     border-radius: 6px;
-    background: #016b18b0;
+    background: var(--main-transparent-color);
   }
 
   .slide {

@@ -87,11 +87,12 @@
     "wardrobes": "Wardrobes",
     "dressingRooms": "Dressing rooms",
     "bedrooms": "Bedrooms",
-    "childrenRooms": "Children's rooms",
+    "children-rooms": "Children's rooms",
     "bathrooms": "Bathrooms",
     "workspaces": "Workspaces",
     "b2b": "B2B",
-    "hallways": "Hallways"
+    "hallways": "Hallways",
+    "others": "Others"
   },
 
   "apartmentProjects": {
@@ -110,6 +111,178 @@
         "option": "Porta Tower",
         "title": "Porta Tower — Apartment Ready for Living",
         "description": "\nStylish 2+1 apartment (85 m²) with MDT & AGT furniture — fully turnkey\n\n✔ Premium kitchen with built-in furniture and appliances, accent lighting, and a quartz agglomerate island\n✔ Two spacious bathrooms — fully equipped\n✔ Functional storage solutions: illuminated cabinets, wardrobes, and hallway furniture\n✔ Thoughtfully designed down to the smallest detail."
+      },
+      "single_contour": {
+        "option": "Single Contour",
+        "title": "Single Contour",
+        "description": "\nA full apartment furniture project designed as one cohesive system. The kitchen, built-in wardrobes, walk-in closet, hallway furniture, and bedroom elements are unified by shared geometry, materials, and color logic.\nMatte green-grey MDF facades are combined with wood-effect surfaces and black metal details. Integrated handles, concealed niches, and open sections are used throughout. All furniture volumes are aligned into a single visual contour, creating a consistent and structured interior."
+      }
+    }
+  },
+
+  "kitchens": {
+    "items": {
+      "country_house": {
+        "option": "Country House",
+        "title": "Kitchen for a Country House in Poti",
+        "description": "A kitchen designed for a private country house in Poti. The furniture features classic framed facades with a natural wood finish, creating a warm and solid appearance suited for everyday living outside the city. Upper cabinets with glass inserts add visual lightness, while tall units with integrated appliances form a clear and balanced architectural composition. The layout is based on symmetry and functionality, providing generous storage and comfortable daily use. Natural materials and a restrained color palette emphasize durability and a timeless character."
+      },
+      "white_geometry": {
+        "option": "White Geometry",
+        "title": "White Geometry",
+        "description": "Matte white MDF kitchen with a linear layout and integrated appliances. A dark contrasting backsplash emphasizes the clean geometry. Large-format marble-effect porcelain flooring. Dining area with a round glass table and metal chairs."
+      },
+      "kitchen_with_island": {
+        "option": "Kitchen with Island",
+        "title": "Corner Kitchen with Island — Pola Villas Cottage Community",
+        "description": "A corner kitchen with a functional island used as an additional workspace and everyday area. All appliances are fully built-in and integrated into floor-to-ceiling cabinetry, maintaining clean lines and a cohesive appearance. Quartz composite countertops provide durability and practicality. Light finishes combined with warm wood textures create a calm, modern interior."
+      },
+      "integrated_kitchen": {
+        "option": "Integrated Kitchen",
+        "title": "Integrated Kitchen with MDF Profile Facades",
+        "description": "A kitchen built with MDF profile facades and integrated handle solutions. The opening system is based on a gola profile, allowing the fronts to remain visually clean and continuous. Precise geometry and smooth surfaces form a unified volume where storage and appliances are fully integrated. The kitchen is designed for everyday functionality while maintaining a restrained, architectural appearance."
+      },
+      "green_wood": {
+        "option": "Green Wood",
+        "title": "Green Wood",
+        "description": "A modern functional kitchen made of MDF and MDF AGT.\nSoft green facades combined with natural wood texture create a balanced, timeless look.\nThe key feature is a two-level countertop: a 100 cm sink area and a 90 cm working area designed for everyday comfort.\nCeiling-height cabinets, open decorative shelves and integrated task lighting complete the space.\nA kitchen focused on ergonomics, functionality and active cooking."
+      },
+      "functional_minimalism": {
+        "option": "Functional Minimalism",
+        "title": "Functional Minimalism",
+        "description": "A straight-line kitchen with clean, precise geometry. Matte MDF facades in a neutral tone. Black surface-mounted handles act as the only graphic accent. Upper and lower cabinets are aligned into a flat composition, with built-in appliances seamlessly integrated. The furniture focuses on functionality and visual clarity."
+      },
+      "captains_family": {
+        "option": "For a Captain's Family",
+        "title": "Kitchen for a Captain's Family",
+        "description": "A kitchen designed as a spacious, separate room functioning as an independent space. A linear layout with MDF AGT Supramat fronts, integrated Bosch appliances, and a quartz worktop. Restrained geometry, integrated lighting, and a well-organized storage system support everyday family life."
+      },
+      "snow_white": {
+        "option": "Snow-White Kitchen",
+        "title": "Snow-White Kitchen with Island",
+        "description": "The kitchen is designed in a snow-white color palette with an emphasis on clean lines and a balanced composition. The project features a built-in glass cabinet and fully integrated appliances, creating a cohesive and refined visual appearance. A kitchen island provides additional workspace and functional use. Quartz composite countertops enhance the restrained aesthetic while ensuring durability and everyday practicality."
+      }
+    }
+  },
+
+  "hallways": {
+    "items": {
+      "linea": {
+        "option": "Linea",
+        "title": "Built-In Entryway Wardrobe Linea",
+        "description": "A floor-to-ceiling built-in entryway wardrobe seamlessly integrated into the hallway. Matte fronts in a light neutral tone create a calm visual base and enhance the sense of space. Vertical surface-mounted bar handles emphasize height and clean geometry. An illuminated shoe niche adds depth and everyday functionality."
+      },
+      "integrated_storage": {
+        "option": "With Integrated Storage",
+        "title": "Functional Hallway with Integrated Storage",
+        "description": "A hallway featuring built-in storage systems with dark wood finishes and sliding fronts. The composition combines closed storage, an open section with hooks and seating, a full-height mirror, and concealed functional modules. The layout is designed for everyday convenience and a clean, well-organized appearance."
+      },
+      "contrasting_entryway": {
+        "option": "Contrasting Entryway",
+        "title": "Contrasting Entryway",
+        "description": "Two built-in wardrobes positioned opposite each other. Matte dark finishes are combined with warm wood textures. A backlit mirror enhances spatial depth and creates a focused lighting accent. Clean geometry and functional storage."
+      }
+    }
+  },
+
+  "bathrooms": {
+    "items": {
+      "warm_minimalism": {
+        "option": "Warm Minimalism",
+        "title": "Bathroom in Warm Minimalist Style",
+        "description": "Bathroom in a warm minimalism style.\nCustom-made furniture made of MDF with a matte finish, combined with glass and metal elements.\nIntegrated lighting highlights the furniture’s geometry and provides soft, comfortable illumination."
+      },
+      "gray_geometry": {
+        "option": "Gray Geometry",
+        "title": "Gray Geometry Bathroom",
+        "description": "A modern bathroom designed in a gray palette with a distinctive geometric accent. Minimalist design, suspended furniture with matte finishes, and built-in niches create a sense of order and visual lightness. A round LED mirror and concealed installation systems emphasize clean lines, functionality, and the contemporary character of the interior."
+      },
+      "concrete_and_wood": {
+        "option": "Concrete & Wood",
+        "title": "Modern Concrete & Wood Bathroom",
+        "description": "A modern bathroom combining concrete-gray finishes with warm wood textures. Furniture, built-in cabinets, and open niches are designed in a consistent style, creating a clean and visually balanced composition. Clear geometry and a thoughtful layout result in a functional and calm space."
+      }
+    }
+  },
+
+  "bedrooms": {
+    "items": {
+      "LA_QUINTA": {
+        "option": "LA QUINTA",
+        "title": "Bedroom set crafted from MDF — clean lines and flawless geometry.",
+        "description": "Backlit mirror with soft LED lighting\nDecorative MDF panels adding depth, rhythm, and architectural character\nA modern design with a warm palette and thoughtfully integrated lighting creates a refined, elegant atmosphere in every detail."
+      },
+      "storage_systems_1": {
+        "option": "With Built-In Storage Systems",
+        "title": "Bedroom with Built-In Storage Systems",
+        "description": "The bedroom interior is designed in a calm, neutral palette with an emphasis on built-in furniture. Floor-to-ceiling wardrobes feature clean geometry and vertical surface-mounted handles. The interior layout includes shelving and storage sections with integrated lighting. Additional niches and open elements add depth and visual balance. The furniture is seamlessly integrated into the room’s architecture, enhancing clarity and spatial harmony."
+      },
+      "storage_systems_2": {
+        "option": "With Built-In Storage System",
+        "title": "Bedroom with Built-In Storage System",
+        "description": "The bedroom is designed in a calm, neutral palette with a focus on built-in furniture. A sliding wardrobe with glossy warm beige fronts and a black aluminum profile runs along the wall. The interior layout includes open shelves, drawers, and hanging rails for practical everyday storage.\nSoft perimeter ceiling lighting and integrated wardrobe illumination create a cozy evening atmosphere and emphasize the clean geometry of the space. Case furniture and the bedside unit are designed in a single style, forming a cohesive and balanced bedroom interior.\nThe bed is not part of the completed work and is shown as a furnishing element only."
+      }
+    }
+  },
+
+  "children-rooms": {
+    "items": {
+      "helper_tower": {
+        "option": "Helper Tower",
+        "title": "Anbani Little Helper Tower",
+        "description": "A multifunctional children’s tower designed to safely involve a child in everyday activities such as cooking, washing hands, or working at counter height. It provides stable support and encourages independence through daily interaction.\n\nThe adjustable step allows the tower to be used as the child grows. The well-balanced structure ensures safety and stability for regular home or educational use.\n\nSpecifications:\n✔ material: furniture-grade sanded birch plywood\n✔ water-repellent protective finish\n✔ 4 adjustable step positions\n✔ stable and ergonomic construction\n✔ overall dimensions: 90 × 50 × 48 cm"
+      },
+      "growing_chair": {
+        "option": "Growing Chair",
+        "title": "Adjustable Growing Chair “ანბანი” (Anbani)",
+        "description": "The “ანბანი” growing chair is a multifunctional piece of furniture designed for long-term use and adaptation to a child’s growth. Suitable for children from 1.5 years old, the chair grows together with the child, adjusting in height and configuration over time.\n\nWith adjustable seat and footrest in both height and depth, the chair provides comfortable seating for various activities including meals, learning, creative work, and everyday use. The stable structure with a wide base ensures safety and reliability.\n\nThe chair is made of eco-friendly 15 mm furniture-grade plywood with a water-repellent finish. It is suitable for home use as well as kindergartens and educational centers.\n\nTechnical Specifications\n✔ Age: from 1.5 years\n✔ Adjustable seat and footrest: height and depth\n✔ Height adjustment step: 3 cm\n✔ Maximum load: up to 100 kg\n✔ Material: 15 mm furniture-grade plywood\n✔ Finish: water-repellent coating\n✔ Designed for long-term, multifunctional use\n\nDimensions\n✔ Overall size: 85 × 50 × 46 cm (H × L × W)\n✔ Seat: 40 × 22.5 cm (W × D)\n✔ Footrest: 40 × 30 cm (W × "
+      }
+    }
+  },
+  "wardrobes": {
+    "items": {
+      "with_ouvered_fronts": {
+        "option": "With Louvered Fronts",
+        "title": "Built-in Wardrobe with Louvered Fronts",
+        "description": "This built-in wardrobe embodies refined elegance and well-considered functionality.\nThe louvered fronts introduce rhythm and depth, giving the structure a light, architectural presence. The calm, sophisticated color enhances the premium feel and blends seamlessly with the surrounding interior finishes.\n\nDesigned from floor to ceiling, the wardrobe is fully integrated into the space, maximizing storage while maintaining a clean, uncluttered appearance. The interior layout is thoughtfully arranged with practical shelving, providing convenient storage for clothing, textiles, and everyday items.\n\nA custom-made solution that combines modern design with timeless aesthetics and intelligent space planning."
+      },
+      "graphite_line": {
+        "option": "Graphite Line",
+        "title": "Graphite Line",
+        "description": "A unified furniture solution combining a freestanding wardrobe and a wardrobe with an integrated workspace. Matte dark-toned facades, clean geometry, and minimalist vertical handles create a refined contemporary look. Thoughtful storage and a compact workspace ensure functionality without visual clutter."
+      },
+      "with_lighting": {
+        "option": "With Lighting",
+        "title": "Built-in bedroom wardrobe with lighting",
+        "description": "A built-in wardrobe designed for a bedroom, featuring smooth fronts and vertical surface-mounted handles. The interior includes a hanging section, storage shelves, and a lower zone for shoes or boxes. Integrated lighting highlights the internal structure and improves everyday usability. A balanced combination of light façades and warm wood-tone interiors."
+      },
+      "wooden_wardrobe": {
+        "option": "Wooden Wardrobe",
+        "title": "Built-in Wooden Wardrobe with Louvered Facades",
+        "description": "A full-height built-in wardrobe made of natural wood, designed as an architectural part of the space. Vertical louvered facades create a clear rhythm, provide natural ventilation, and emphasize the natural texture of the material. The wardrobe is fully integrated into the room geometry, maintaining visual balance and a sense of openness. Warm wood tones work with textured walls and soft lighting to form a calm, refined interior solution."
+      }
+    }
+  },
+  "b2b": {
+    "items": {
+      "kindergarten_space": {
+        "option": "Activity Space",
+        "title": "Kindergarten Activity Space",
+        "description": "This kindergarten project is designed to encourage active engagement, development, and visual stimulation. The interior features a combination of bright and contrasting colors — green, yellow, blue, and orange — creating a lively and energetic atmosphere. Nature-inspired decorative elements such as a tree, clouds, and birds add a friendly and recognizable character to the space. Child-scale furniture with rounded shapes, stable tables, and open storage supports play-based learning and group activities. The layout is organized to accommodate classes, creativity, and interaction."
+      },
+      "organic_shop": {
+        "option": "Organic Shop",
+        "title": "Custom Wooden Furniture for Organic Shop, Batumi",
+        "description": "A complete set of custom wooden retail furniture was created for an organic shop. The scope includes a central display shelving unit, modular storage systems, open shelving, and a separate floor-standing unit for customer bags and baskets.\nMade from natural wood combined with a metal frame, all elements form a cohesive and practical retail system designed for clear product display and everyday use."
+      }
+    }
+  },
+  "others": {
+    "items": {
+      "others": {
+        "option": "Others",
+        "title": "Others",
+        "description": ""
       }
     }
   }

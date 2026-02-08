@@ -1,6 +1,6 @@
 .wrap {
   width: 100%;
-  height: 700px;
+  height: calc(100dvh - 80px);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -13,7 +13,6 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.6);
 }
 
 .bannerImg {
@@ -61,7 +60,7 @@
   display: inline-block;
   max-width: fit-content;
   background-color: transparent;
-  border: 2px solid #9bbf00;
+  border: 2px solid #fff;
   color: #fff;
   padding: 12px 24px;
   border-radius: 8px;
@@ -78,7 +77,8 @@
   top: 0;
   height: 100%;
   width: 0;
-  background-color: #9bbf00;
+  background-color: #693d22;
+  background-color: #ffffff;
   z-index: -1;
   opacity: 0;
   transition:
@@ -86,30 +86,14 @@
     opacity 0.5s ease;
 }
 
-// .button::after {
-//   content: '';
-//   position: absolute;
-//   left: 0;
-//   bottom: 10px;
-//   height: 2px;
-//   width: 0;
-//   margin: 0 24px;
-//   background-color: #fff;
-//   transition: width 0.5s ease;
-// }
-
 .button:hover {
-  color: #fff;
+  color: gray;
 }
 
 .button:hover::before {
   width: 100%;
   opacity: 1;
 }
-
-// .button:hover::after {
-//   width: calc(100% - 48px);
-// }
 
 .dropdownWrap {
   position: relative;
@@ -128,7 +112,6 @@
 .dropdown {
   background: #fff;
   border-radius: 12px;
-  // padding: 8px 0;
   min-width: 220px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
   overflow: hidden;
@@ -147,7 +130,7 @@
         color 0.3s ease;
 
       &:hover {
-        background: #9bbf00;
+        background: var(--main-color);
         color: #fff;
         transition:
           background 0.3s ease,
@@ -158,20 +141,17 @@
 }
 
 @media (max-width: 1200px) {
+  .wrap {
+    height: calc(100dvh - 72px);
+  }
   .hero {
     height: 500px;
   }
 }
 
-@media (max-width: 990px) {
-  .wrap {
-    height: 422px;
-  }
-}
-
 @media (max-width: 550px) {
   .wrap {
-    height: 300px;
+    height: 400px;
   }
 
   .container {

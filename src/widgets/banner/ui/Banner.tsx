@@ -16,13 +16,12 @@ export default function Banner() {
       projects: tc('projects'),
       wardrobes: tc('wardrobes'),
       kitchens: tc('kitchens'),
-      // hallways: tc('hallways'),
-      // bedrooms: tc('bedrooms'),
-      // 'children-rooms': tc('childrenRooms'),
-      // 'dressing-rooms': tc('dressingRooms'),
-      // bathrooms: tc('bathrooms'),
-      // workspaces: tc('workspaces'),
+      hallways: tc('hallways'),
+      bedrooms: tc('bedrooms'),
+      'children-rooms': tc('children-rooms'),
+      bathrooms: tc('bathrooms'),
       b2b: tc('b2b'),
+      others: tc('others'),
     }),
     [tc],
   );
@@ -34,10 +33,10 @@ export default function Banner() {
       <div className={styles.banner}>
         <Image
           className={styles.bannerImg}
-          src="/kt.webp"
+          src="/banner.webp"
           alt="banner"
           width={1920}
-          height={836}
+          height={1000}
           priority={true}
         />
       </div>
