@@ -79,15 +79,15 @@ export default function Projects() {
           onChange={handleChangeCategory}
         />
       </div>
-
-      <div className={styles.dropdown}>
-        <CategoryDropdown
-          value={String(activeItem.id)}
-          options={itemOptions}
-          onChange={handleChangeItem}
-        />
-      </div>
-
+      {categoryFromUrl !== 'others' && (
+        <div className={styles.dropdown}>
+          <CategoryDropdown
+            value={String(activeItem.id)}
+            options={itemOptions}
+            onChange={handleChangeItem}
+          />
+        </div>
+      )}
       <ProjectDescription
         title={itemT(activeItem.title)}
         description={itemT(activeItem.description)}
