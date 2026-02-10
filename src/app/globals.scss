@@ -8,11 +8,12 @@
   --main-color: #db9455;
   --main-transparent-color: #db9355b0;
   --secondary-color: #c9601e;
-  --bg-color: #efe3d1;
-  --text-color: #222;
+  --bg-color: #ede9e2;
+  --text-color: #1f1f1f;
   --border-radius: 8px;
   --font-size-base: 16px;
-  --font-main: 'Montserrat', sans-serif;
+  --font-main: 'Manrope', sans-serif;
+  --font-text: 'Inter', sans-serif;
 }
 
 html,
@@ -24,7 +25,7 @@ body {
 }
 
 body {
-  background: #ffffff;
+  background: #ede9e2;
   color: var(--text-color);
   line-height: 1.5;
   width: 100%;
@@ -34,19 +35,23 @@ body {
 }
 
 h1,
-h2,
-h3,
-h4 {
+h2 {
   font-weight: 600;
   line-height: 1.2;
 }
 
+h3,
+h4 {
+  font-weight: 500;
+  line-height: 1.2;
+}
+
 h1 {
-  font-size: 40px;
+  font-size: 56px;
 }
 
 h2 {
-  font-size: 32px;
+  font-size: 40px;
 }
 
 h3 {
@@ -58,7 +63,8 @@ h4 {
 }
 
 p {
-  font-size: 16px;
+  font-family: var(--font-text);
+  font-size: 24px;
 }
 
 li {
@@ -83,11 +89,11 @@ footer {
 
 @media (max-width: 990px) {
   h1 {
-    font-size: 30px;
+    font-size: 48px;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 32px;
   }
 
   h3 {
@@ -99,17 +105,17 @@ footer {
   }
 
   p {
-    font-size: 15px;
+    font-size: 20px;
   }
 }
 
 @media (max-width: 550px) {
   h1 {
-    font-size: 20px;
+    font-size: 30px;
   }
 
   h2 {
-    font-size: 17px;
+    font-size: 24px;
   }
 
   h3 {
@@ -121,6 +127,6 @@ footer {
   }
 
   p {
-    font-size: 14px;
+    font-size: 15px;
   }
 }

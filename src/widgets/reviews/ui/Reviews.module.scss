@@ -1,6 +1,6 @@
 .reviews {
   padding: 10px 30px;
-  background: #fafafa;
+  background: var(--bg-color);
   width: 100%;
   max-width: 1440px;
 }
@@ -27,9 +27,5 @@
 @media (max-width: 550px) {
   .reviews {
     padding: 10px 0 10px 16px;
-  }
-
-  .reviewsTitle {
-    text-align: center;
   }
 }
