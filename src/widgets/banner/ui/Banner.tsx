@@ -14,12 +14,12 @@ export default function Banner() {
   const categoryLabels = useMemo(
     () => ({
       projects: tc('projects'),
-      wardrobes: tc('wardrobes'),
       kitchens: tc('kitchens'),
       hallways: tc('hallways'),
       bedrooms: tc('bedrooms'),
       'children-rooms': tc('children-rooms'),
       bathrooms: tc('bathrooms'),
+      wardrobes: tc('wardrobes'),
       b2b: tc('b2b'),
       others: tc('others'),
     }),

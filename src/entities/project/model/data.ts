@@ -94,6 +94,20 @@ export const projectCategories = [
       {
         id: 1,
         src: [
+          '/images/kitchens/captains_family/1.png',
+          '/images/kitchens/captains_family/2.png',
+          '/images/kitchens/captains_family/3.png',
+          '/images/kitchens/captains_family/4.png',
+          '/images/kitchens/captains_family/5.png',
+          '/images/kitchens/captains_family/6.png',
+        ],
+        title: 'kitchens.items.captains_family.title',
+        description: 'kitchens.items.captains_family.description',
+        option: 'kitchens.items.captains_family.option',
+      },
+      {
+        id: 2,
+        src: [
           '/images/kitchens/country_house/1.jpg',
           '/images/kitchens/country_house/2.jpg',
           '/images/kitchens/country_house/3.jpg',
@@ -103,7 +117,7 @@ export const projectCategories = [
         option: 'kitchens.items.country_house.option',
       },
       {
-        id: 2,
+        id: 3,
         src: [
           '/images/kitchens/white_geometry/1.jpg',
           '/images/kitchens/white_geometry/2.jpg',
@@ -114,7 +128,7 @@ export const projectCategories = [
         option: 'kitchens.items.white_geometry.option',
       },
       {
-        id: 3,
+        id: 4,
         src: [
           '/images/kitchens/kitchen_with_island/1.png',
           '/images/kitchens/kitchen_with_island/2.png',
@@ -125,7 +139,7 @@ export const projectCategories = [
         option: 'kitchens.items.kitchen_with_island.option',
       },
       {
-        id: 4,
+        id: 5,
         src: [
           '/images/kitchens/integrated_kitchen/1.jpg',
           '/images/kitchens/integrated_kitchen/2.png',
@@ -137,7 +151,7 @@ export const projectCategories = [
         option: 'kitchens.items.integrated_kitchen.option',
       },
       {
-        id: 5,
+        id: 6,
         src: [
           '/images/kitchens/green_wood/1.webp',
           '/images/kitchens/green_wood/2.webp',
@@ -150,7 +164,7 @@ export const projectCategories = [
         option: 'kitchens.items.green_wood.option',
       },
       {
-        id: 6,
+        id: 7,
         src: [
           '/images/kitchens/functional_minimalism/1.png',
           '/images/kitchens/functional_minimalism/2.png',
@@ -159,20 +173,6 @@ export const projectCategories = [
         title: 'kitchens.items.functional_minimalism.title',
         description: 'kitchens.items.functional_minimalism.description',
         option: 'kitchens.items.functional_minimalism.option',
-      },
-      {
-        id: 7,
-        src: [
-          '/images/kitchens/captains_family/1.png',
-          '/images/kitchens/captains_family/2.png',
-          '/images/kitchens/captains_family/3.png',
-          '/images/kitchens/captains_family/4.png',
-          '/images/kitchens/captains_family/5.png',
-          '/images/kitchens/captains_family/6.png',
-        ],
-        title: 'kitchens.items.captains_family.title',
-        description: 'kitchens.items.captains_family.description',
-        option: 'kitchens.items.captains_family.option',
       },
       {
         id: 8,
