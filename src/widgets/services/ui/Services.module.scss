@@ -10,8 +10,6 @@
 }
 
 .description {
-  font-weight: 500;
-  font-size: 18px;
   line-height: 140%;
 }
 
@@ -26,14 +24,10 @@
 }
 
 .item {
-  font-weight: 500;
-  font-size: 20px;
   margin-bottom: 30px;
 }
 
 .subtitle {
-  font-weight: 600;
-  font-size: 24px;
   margin-bottom: 10px;
 }
 
@@ -49,17 +43,9 @@
   .services {
     gap: 30px;
   }
-
-  .item {
-    font-size: 16px;
-  }
 }
 @media (max-width: 550px) {
   .services {
     gap: 20px;
-  }
-
-  .item {
-    font-size: 14px;
   }
 }

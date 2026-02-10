@@ -1,6 +1,6 @@
 .wrap {
   width: 100%;
-  height: calc(100dvh - 80px);
+  height: calc(100dvh - 200px);
   position: relative;
   display: flex;
   flex-direction: column;
@@ -42,16 +42,14 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   gap: 50px;
+  position: relative;
 }
 
 .title {
-  color: white;
-}
-
-.subtitle {
-  font-size: 19px;
-  color: white;
+  color: var(--bg-color);
+  text-align: center;
 }
 
 .button {
@@ -60,15 +58,16 @@
   display: inline-block;
   max-width: fit-content;
   background-color: transparent;
-  border: 2px solid #fff;
-  color: #fff;
+  border: 2px solid #ede9e2;
+  color: #ede9e2;
   padding: 12px 24px;
   border-radius: 8px;
   text-decoration: none;
-  font-weight: 600;
+  font-weight: 500;
   cursor: pointer;
   transition: color 0.5s ease;
-  font-size: 14px;
+  font-family: var(--font-text);
+  font-size: 18px;
 }
 .button::before {
   content: '';
@@ -77,8 +76,7 @@
   top: 0;
   height: 100%;
   width: 0;
-  background-color: #693d22;
-  background-color: #ffffff;
+  background-color: #ede9e2;
   z-index: -1;
   opacity: 0;
   transition:
@@ -87,7 +85,7 @@
 }
 
 .button:hover {
-  color: gray;
+  color: #1f1f1f;
 }
 
 .button:hover::before {
@@ -96,9 +94,10 @@
 }
 
 .dropdownWrap {
-  position: relative;
-  display: inline-block;
+  position: absolute;
   width: 220px;
+  bottom: 50px;
+  left: 30px;
 }
 
 .dropdownContainer {
@@ -110,7 +109,7 @@
 }
 
 .dropdown {
-  background: #fff;
+  background: #ede9e2;
   border-radius: 12px;
   min-width: 220px;
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.12);
@@ -120,7 +119,7 @@
     list-style: none;
 
     .categoryLink {
-      font-size: 12px;
+      font-size: 15px;
       display: block;
       padding: 6px 16px;
       color: #000;
@@ -131,7 +130,7 @@
 
       &:hover {
         background: var(--main-color);
-        color: #fff;
+        color: var(--bg-color);
         transition:
           background 0.3s ease,
           color 0.3s ease;
@@ -149,22 +148,30 @@
   }
 }
 
-@media (max-width: 550px) {
-  .wrap {
-    height: 400px;
-  }
-
+@media (max-width: 768px) {
   .container {
-    gap: 20px;
+    gap: 50px;
     padding: 30px 16px;
   }
 
-  .subtitle {
-    font-size: 14px;
+  .dropdownWrap {
+    position: relative;
+    display: inline-block;
+    width: 220px;
+    top: 40px;
+    left: -3px;
+  }
+
+  .dropdownContainer {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    z-index: 10;
+    padding-top: 8px;
   }
 
   .button {
-    font-size: 12px;
+    font-size: 15px;
     padding: 10px 18px;
   }
 
@@ -175,5 +182,15 @@
 
   .button:hover::after {
     width: calc(100% - 36px);
+  }
+}
+
+@media (max-width: 550px) {
+  .wrap {
+    height: 400px;
+  }
+
+  .subtitle {
+    font-size: 14px;
   }
 }

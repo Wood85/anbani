@@ -1,5 +1,5 @@
 import type { Metadata } from 'next';
-import { Montserrat } from 'next/font/google';
+import { Manrope, Inter } from 'next/font/google';
 import { NextIntlClientProvider } from 'next-intl';
 import { getMessages } from 'next-intl/server';
 import { routing } from '@/i18n/routing';
@@ -10,8 +10,13 @@ import { Footer } from '@/widgets/footer';
 
 import '@/app/globals.scss';
 
-const montserrat = Montserrat({
-  variable: '--font-montserrat',
+const manrope = Manrope({
+  variable: '--font-manrope',
+  subsets: ['latin', 'cyrillic'],
+});
+
+const inter = Inter({
+  variable: '--font-inter',
   subsets: ['latin', 'cyrillic'],
 });
 
@@ -38,7 +43,7 @@ export default async function RootLayout({ children, params }: Props) {
 
   return (
     <html lang={locale}>
-      <body className={`${montserrat.variable} font-sans`}>
+      <body className={`${manrope.variable} ${inter.variable} font-sans`}>
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <main>{children}</main>
